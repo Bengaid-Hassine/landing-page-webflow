@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,wght@1,500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    position: relative;
+}
+div.video-Presentation {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    color: white;
+
+    }
+div.video-Presentation span.animation {
+    color: cyan;
+
+}
+div.video-Presentation video {
+    position: absolute;
+    top: 0;
+    right: 8px;
+    width: 80%;
+    z-index: -5;
+    opacity: .6;
+}
+div.video-Presentation .animation-content {
+    width: 50%;
+}
+button.Monbouton {
+    padding: 8px;
+    width: 35%;
+}
+ul.navbar-nav li {
+    margin-right: 25px;
+}
+/*******************************************************/
+@media all and (max-width: 990px) {
+    ul.nav-underline li a.nav-link {
+        width: 108px;
+        padding: 8px 12px 8px 8px;
+    }
+    ul.nav-underline {
+        margin-left: 0px !important;
+        margin-top: 12px;
+    }
+    ul.login li  {
+        width: 30%;
+        margin: 18px auto; 
+    }
+    ul.login li a#login-btn {
+        width: 100%;
+        margin: 0 auto;
+    }
+    footer {
+        bottom: -1000px !important; 
+    }
+}
+@media all and (max-width: 768px) {
+    footer {
+        bottom: -2100px !important; 
+    }
+}
+/**************************************************/
+ul.nav-underline a.nav-link {
+    transition-duration: .4s;
+}
+ul.nav-underline a.nav-link:hover {
+    border-bottom-color: cyan;
+  }
+ul.navbar-nav li a {
+    font-size: 15px;
+    font-weight: bold;
+}
+ul.navbar-nav li a.dropdown-item {
+    margin-left: 10px;
+    width: 100%;
+    padding-left: 8px;
+}
+a#login-btn {
+    width: 100px;
+}
+div.intro {
+    width: 60%;
+    padding: 10px;
+    margin-top: 200px;
+    margin-bottom: 150px;
+}
+div.intro h1 {
+    font-size: 80px;
+    font-weight: bold;
+    font-family: 'Merriweather', serif;
+}
+div.intro h1 span#tiret {
+    font-size: 100px;
+}
+div.video {
+    margin-top: 200px;
+    margin-bottom: 200px;
+    background-color: rgb(225, 224, 224);
+    padding: 50px;
+}
+div.video iframe {
+    box-shadow: 0 0 20px 10px rgb(83, 83, 83);
+    width: 65%;
+}
+@media all and (max-width: 855px) {
+    div.video iframe {
+        width: 80%;
+        height: 330px !important;
+    } 
+}
+div.features {
+    margin-top: 120px;
+}
+div.feature-card .card {
+    border: none;
+    border-top: solid 2px white;
+    border-radius: 0;
+    color: white;
+}
+i {
+    margin-right: 8px;
+}
+
+div.brands {
+    margin-top: 50px;
+    background-color: black;
+}
+@media all and (max-width: 576px) {
+    div.brands .brand-logo {
+        width: 20% !important;
+    }
+}
+div.form-container {
+    margin-top: 200px;
+    background: linear-gradient(to right, #ffd194, #70e1f5);
+    height: 100vh;
+    position: relative;
+}
+div.formulaire {
+    width: 70%;
+    height: 90%;
+    position: absolute;
+    top: 5%;
+    right: 15%;
+    font-family: 'Source Serif 4', serif;
+    box-shadow: 8px 10px 15px gray;
+}
+div.form-container div.contact {
+    color: white;
+    position: relative;
+    background: linear-gradient(to right, #4BC0C8, #C779D0, #FEAC5E);
+    height: 100%;
+    
+}
+div.form-container div.contact div.icons {
+    position: absolute;
+    bottom: 20px;
+    right: 100px;
+    font-size: 22px;
+    cursor: pointer;
+}
+div.form-container p.vertical {
+    writing-mode: vertical-rl; /* Sets the writing mode to vertical */
+    transform: rotate(-180deg);
+    margin-left: 30px;
+    margin-top: 35px;
+    font-size: 28px;
+}
+div.formulaire .getStarted {
+    background-color: rgba(255, 255, 255, 0.445);
+    
+}
+div.formulaire .getStarted .header h3 {
+    font-size: 35px;
+}
+div.formulaire .getStarted .header p {
+    font-size: 25px;
+    font-style: italic;
+}
+div.formulaire .getStarted .coord {
+    display: flex;
+    
+}
+div.formulaire .getStarted .coord i {
+    font-size: 25px;
+    color: pink;
+}
+div.form-container form {
+    background-color: white;
+    padding-top: 25px;
+    position: relative;
+    height: 50%;
+}
+div.form-container form input, div.form-container form textarea {
+    background-color: white !important;
+    border: none;
+    border-bottom: solid 1px gray;
+    width: 80%;
+    border-radius: 0;
+    margin-left: 30px;
+    color: black !important;
+    text-align: center;
+}
+div.form-container form label {
+    color: black;
+}
+div.form-container form .envoyer {
+    position: absolute;
+    bottom: -20px;
+    font-weight: 500;
+    letter-spacing: .2rem;
+}
+footer {
+    background: linear-gradient(to right, #414345, #232526); 
+    position: absolute;
+    bottom: -1000px;
+    width: 100%;
+}
+footer h4 {
+    color: white;
+}
+footer img {
+    margin-top: 50px;
+    margin-left: 140px;
+    margin-bottom: 80px;
+}
+
+footer ul {
+    margin-left: -30px;
+}
+footer ul li:first-child {
+    margin-top: 25px;
+}
+footer ul li {
+    list-style-type: none;
+    margin-bottom: 15px;
+    font-weight: 600;
+    font-size: 18px;
+    cursor: pointer;
+    transition-duration: .6s;
+}
+footer ul li:hover {
+    color: white;
+}
+footer p#copywrite {
+    margin-top: 50px;
+}
+/******************************************************/
+.templates-container {
+    margin-top: 250px;
+}
+.templates-container h2 {
+    font-size: 48px;
+    font-weight: 600;
+    font-family: 'Merriweather', serif;
+    color: white;
+    margin-bottom: 80px;
+}
+.swiper {
+    width: 100%;
+    height: 500px;
+    position: relative;
+}
+
+.swiper-slide {
+   width: 35%;
+   height: 420px;
+}
+.swiper-pagination {
+    position: absolute !important;
+    bottom: 25px !important;
+}
+.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0 var(--swiper-pagination-bullet-horizontal-gap,10px) !important;
+}
+.swiper-pagination-bullet {
+    background-color: white !important;
+    opacity: .8 !important;
+}
+.swiper-pagination-bullet-active {
+    background-color: rgb(34, 104, 209) !important;
+    opacity: .8 !important;
+}
+.swiper-slide-active {
+    background-color: red;
+}
